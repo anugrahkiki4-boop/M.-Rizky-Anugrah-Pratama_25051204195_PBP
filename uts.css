@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #4b2417;
+    color: #fff0d2;
+    font-family: Georgia, "Times New Roman", serif;
+}
+img {
+    max-width: 100%;
+}
+.halaman-pembuka {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    padding: 25px;
+    overflow-y: auto;
+    background-color: #4b2417;
+    color: #f3d89c;
+    text-align: center;
+}
+
+.garis_kotak {
+    width: 100%;
+    max-width: 650px;
+    padding: 25px 20px;
+    border: 1px solid #c99a42;
+    outline: 1px solid #c99a42;
+    outline-offset: 6px;
+}
+
+.hiasan1{
+    display: block;
+    width: min(220px, 80%);
+    height: 70px;
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+
+.label-pembuka {
+    color: #f3d89c;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin: 10px 0 18px;
+}
+
+.deskripsi-pembuka {
+    max-width: 500px;
+    margin: 18px auto;
+    color: #fff0d2;
+    font-size: clamp(13px, 1.5vw, 16px);
+    line-height: 1.8;
+}
+
+.tujuan-undangan {
+    color: #e9bd62;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.tombol-undangan {
+    padding: 12px 30px;
+    border: 1px solid #f3d89c;
+    border-radius: 30px;
+    background-color: #c99a42;
+    color: #35170f;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tombol-undangan:hover {
+    background-color: #f3d89c;
+    transform: translateY(-2px);
+}
+
+#isiUndangan {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 75px);
+    height: calc(100dvh - 75px);
+    min-height: 0;
+    overflow: hidden;
+    background-color: #4b2417;
+}
+
+.container-undangan {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.kolom-kiri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex: 0 0 50%;
+    height: 100%;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-right: 1px solid #c99a42;
+}
+
+.pengantin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pengantin img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+}
+
+.kolom-kanan {
+    display: block;
+    width: 50%;
+    flex: 0 0 50%;
+    height: 100%;
+    min-width: 0;
+    padding: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #4b2417;
+}
+
+.teks-undangan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+    min-width: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bismillah-atas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto 5px;
+}
+
+.bismillah-atas img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: clamp(55px, 8vw, 100px);
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+
+.hiasan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hiasan img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: clamp(30px, 4vw, 50px);
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.judul-kecil {
+    width: 100%;
+    color: #f3d89c;
+    font-size: clamp(11px, 1.1vw, 14px);
+    letter-spacing: clamp(2px, 0.4vw, 5px);
+    margin: 0 0 10px;
+}
+
+.teks-undangan h1 {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    color: #f3d89c;
+    font-size: clamp(28px, 3.5vw, 52px);
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+.teks-undangan h1 span {
+    color: #d49a3c;
+    font-style: italic;
+}
+
+.kalimat-undangan {
+    width: 100%;
+    max-width: 540px;
+    color: #fff0d2;
+    font-size: clamp(12px, 1.1vw, 16px);
+    line-height: 1.7;
+    margin: 0 auto 20px;
+}
+
+.detail-acara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.item-detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    text-align: left;
+}
+
+.teks-detail {
+    min-width: 0;
+}
+
+.label-detail {
+    color: #d6a34b;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.ikon-kalender {
+width: 60px;
+height: 60px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.ikon-lokasi {
+width: 28px;
+height: 28px;
+object-fit: contain;
+flex-shrink: 0;
+}
+
+.bagian-mempelai {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 25px 0 40px;
+    text-align: center;
+    scroll-margin-top: 20px;
+    border-top: 1px solid #c99a42;
+}
+.bagian-mempelai .judul-kecil {
+    margin-top: 20px;
+}
+
+.foto-mempelai {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.foto-mempelai img {
+    display: block;
+    width: 80%;
+    max-width: 380px;
+    max-height: 450px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.galeri-mempelai {
+    position: relative;
+    width: 210px;
+    height: 280px;
+    margin: 20px auto;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid #d8c8a0;
+    border-radius: 28px;
+    background-color: #35170f;
+    box-shadow: 0 0 10px #d8c8a055;
+}
+
+.slide-foto {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: gantiFoto 16s infinite;
+}
+
+.slide-foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+.slide-foto:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide-foto:nth-child(2) {
+    animation-delay: 4s;
+}
+.slide-foto:nth-child(3) {
+    animation-delay: 8s;
+}
+.slide-foto:nth-child(4) {
+    animation-delay: 12s;
+}
+
+@keyframes gantiFoto {
+    0% {opacity: 0;}
+    5% {opacity: 1;}
+    25% {opacity: 1;}
+    30% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.nama-mempelai {
+    color: #f3d89c;
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: normal;
+
+    margin: 20px 0;
+}
+
+.garis-pemisah {
+    width: 70%;
+    margin: 30px auto;
+    border-top: 1px solid #c99a42;
+}
+
+#formDataTamu {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+#formDataTamu .grup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+#formDataTamu .grup-input label {
+    color: #f3d89c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#formDataTamu .grup-input input,
+#formDataTamu .grup-input select,
+#formDataTamu .grup-input textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #c99a42;
+    border-radius: 7px;
+    background-color: #fffdf9;
+    color: #65452f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+}
+
+#formDataTamu .grup-input input:focus,
+#formDataTamu .grup-input select:focus,
+#formDataTamu .grup-input textarea:focus {
+    outline: 2px solid #e9bd62;
+    outline-offset: 1px;
+}
+
+#formDataTamu .grup-input textarea {
+    resize: vertical;
+}
+
+#formDataTamu .tombol-kirim {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e9bd62;
+    border-radius: 30px;
+    background-color: #c99a42;
+    color: #35170f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formDataTamu .tombol-kirim:hover {
+    background-color: #f3d89c;
+    transform: translateY(-2px);
+}
